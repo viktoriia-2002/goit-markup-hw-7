@@ -1,1 +1,9 @@
 // Палітра кольорів макета і набори шрифтів винесені у змінні у файлі variables.scss, який лежить в папці sass/utils. Можна використовувати CSS або SASS змінні (за бажанням).
+
+:root {
+  --primary-header-color: #212121;
+  --secondary-color: #757575;
+  --accent-color: #2196f3;
+  --timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  --input-color: #2f303a;
+}

@@ -1,1 +1,26 @@
-@import "./variables";
+@import "./base/reset";
+@import "./utils/variables";
+@import "./base/common";
+@import "./base/hidden";
+@import "./utils/variables";
+@import "./components/container";
+@import "./components/btn";
+@import "./components/pre-title";
+@import "./components/subtitle";
+@import "./layouts/header";
+@import "./layouts/hero";
+@import "./layouts/wrapper";
+@import "./layouts/characteristics";
+@import "./layouts/our-business";
+@import "./layouts/our-team";
+@import "./layouts/social";
+@import "./layouts/loyal-customers";
+@import "./layouts/options";
+@import "./layouts/websites";
+@import "./layouts/card-set";
+@import "./layouts/overlay";
+@import "./layouts/footer";
+@import "./layouts/footer-follow-us";
+
+
+

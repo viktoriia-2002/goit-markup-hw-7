@@ -1,0 +1,55 @@
+form {
+    width: 528px;
+    padding: 40px;
+  }
+  
+  .wrapper__input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    font: inherit;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 12px;
+    transition: border-color 250ms var(--timing-function);
+  }
+  
+  .wrapper {
+    position: relative;
+  }
+  
+  .wrapper__icon {
+    position: absolute;
+    display: inline-block;
+    top: 50%;
+    left: 12px;
+    transform: translateY(-50%);
+    transition: fill 250ms var(--timing-function);
+  }
+  
+  .wrapper__input:focus,
+  .wrapper__input:hover {
+    border-color: var(--accent-color);
+    outline: transparent;
+  }
+  
+  .wrapper__input:focus + .wrapper__icon {
+    fill: var(--accent-color);
+  }
+  
+  .wrapper__input:hover + .wrapper__icon {
+    fill: var(--accent-color);
+  }
+  
+  .wrapper__input {
+    width: 100%;
+    height: 40px;
+    padding-left: 42px;
+    font: inherit;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    font-size: 12px;
+    transition: transform 250ms var(--timing-function),
+      outline 250ms var(--timing-function), border 250ms var(--timing-function);
+  }
+  
