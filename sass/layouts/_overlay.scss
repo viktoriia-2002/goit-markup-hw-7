@@ -1,51 +1,44 @@
 .overlay {
   position: relative;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  @include flex-align-justify;
   overflow: hidden;
-}
 
-.overlay:hover:before {
-  opacity: 1;
-}
+  &:hover:before {
+    opacity: 1;
+  }
 
-.overlay__section {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(33, 150, 243, 0.9);
-  transform: translateY(100%);
-  transition: transform 250ms var(--timing-function);
-}
+  &__section {
+    position: absolute;
+    @include flex-align-justify;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(100%);
+    transition: transform 250ms var(--timing-function);
+  }
 
-.overlay__desq {
-  position: absolute;
-  display: flex;
-  width: 322px;
-  height: 168px;
-  opacity: 0;
-  transition: opacity 250ms var(--timing-function);
-}
+  &__desq {
+    position: absolute;
+    display: flex;
+    width: 322px;
+    height: 168px;
+    opacity: 0;
+    transition: opacity 250ms var(--timing-function);
+  }
 
-.overlay:hover .overlay__desq {
-  opacity: 1;
-}
+  &:hover .overlay__desq {
+    opacity: 1;
+  }
 
-.overlay__text {
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.56;
-  letter-spacing: 0.03em;
-  color: white;
-}
+  &__text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.56;
+    letter-spacing: 0.03em;
+    color: white;
+  }
 
-.overlay:hover .overlay__section {
-  transform: translateY(0);
-}
-
-.overlay__section {
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  &:hover .overlay__section {
+    transform: translateY(0);
+  }
 }

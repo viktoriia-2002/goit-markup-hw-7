@@ -1,43 +1,40 @@
-
-
 .our-team {
-    background-color: #f5f4fa;
-  }
-  
-  .our-team__title {
+  background-color: #f5f4fa;
+
+  &__title {
     text-align: center;
     color: var(--primary-header-color);
     margin-bottom: 50px;
   }
-  
-  .staff-list__subtitle {
+}
+
+.staff-list {
+  display: flex;
+
+  &__subtitle {
     color: var(--primary-header-color);
     margin-bottom: 10px;
   }
-  
-  .staff-list__text {
+
+  &__text {
     font-size: 16px;
     line-height: 1.18;
     letter-spacing: 0.03em;
     color: var(--secondary-color);
     margin-bottom: 16px;
   }
-  
-  .staff-list {
-    display: flex;
-  }
-  
-  .staff-list__item {
+
+  &__item {
     margin-right: 30px;
     text-align: center;
     border-radius: 0px 0px 4px 4px;
     box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
       0px 2px 1px rgba(0, 0, 0, 0.2);
   }
-  
-  .staff-list__desq {
+
+  &__desq {
     padding-top: 30px;
     padding-bottom: 30px;
     background-color: white;
   }
-  
+}

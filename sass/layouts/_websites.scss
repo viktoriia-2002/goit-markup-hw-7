@@ -1,15 +1,12 @@
 .websites {
   padding: 20px 24px;
   border: 1px solid #eeeeee;
-}
 
-.websites__title {
-  color: var(--primary-header-color);
-}
-
-.websites__text {
-  font-size: 16px;
-  line-height: 1.9;
-  letter-spacing: 0.03em;
-  color: var(--secondary-color);
+  &__title {
+    color: var(--primary-header-color);
+  }
+  &__text {
+    @include font ($fs:16px, $fw:400, $lh:1.19, $ls:0.03em);
+    color: var(--secondary-color);
+  }
 }

@@ -3,56 +3,47 @@ header {
 }
 
 .main-nav {
-  display: flex;
-  align-items: center;
-}
+  @include flex-align;
 
-.main-nav__logo,
-.footer-main__logo {
-  font-family: "Raleway";
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
-  letter-spacing: 0.03em;
-  color: var(--accent-color);
-}
+  &__logo {
+    font-family: var(--secondary-font);
+    @include font(26px, 700, 1.19);
+    color: var(--accent-color);
+  }
 
-.main-nav__span,
-.footer-main__span {
-  font-family: "Raleway";
-  color: var(--primary-header-color);
-  margin-left: -7px;
+  &__span {
+    font-family: var(--secondary-font);
+    color: var(--primary-header-color);
+    margin-left: -7px;
+  }
 }
 
 .navigation__list {
   display: flex;
   margin-left: 93px;
-}
 
-.navigation__list .item {
-  position: relative;
-}
+  & .item {
+    position: relative;
+  }
 
-.navigation__list > li {
-  margin-left: 40px;
+  & > li {
+    margin-left: 40px;
+  }
 }
 
 .navigation__link {
   display: block;
   padding-top: 32px;
   padding-bottom: 32px;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
+  @include font($fw:500, $ls:0.02em) 
   color: var(--primary-header-color);
   transition: color 250ms var(--timing-function),
     transition 250ms var(--timing-function);
-}
 
-.navigation__link:hover,
-.navigation__link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .navigation__item .current {
@@ -70,44 +61,38 @@ header {
   transform: translateY(30px);
   opacity: 1;
   transition: opacity 250ms var(--timing-function);
-}
 
-
-.navigation__link.current:hover::after {
-  opacity: 1;
+  &.current:hover::after {
+    opacity: 1;
+  }
 }
 
 .connections-list {
   display: flex;
-}
-
-.connections-list > li {
-  margin-left: 40px;
-}
-
-.connections-list {
   margin-left: auto;
-}
 
-// 
+  & > li {
+    margin-left: 40px;
+  }
+}
 
 .connections-list__email,
 .connections-list__tel {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-family: "Roboto";
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 16px;
-  letter-spacing: 0.02em;
+  @include flex-align-justify;
+  font-family: var(--main-font);
+  @include font(14px, 500, 1.14, 0.02em);
   color: var(--secondary-color);
   transition: color 250ms var(--timing-function);
-}
 
-.connections-list__tel:focus,
-.connections-list__tel:hover {
-  color: var(--accent-color);
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
 }
 
 .connections-list__email:focus,
