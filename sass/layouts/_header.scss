@@ -33,9 +33,10 @@ header {
 
 .navigation__link {
   display: block;
+  position: relative;
   padding-top: 32px;
   padding-bottom: 32px;
-  @include font($fw:500, $ls:0.02em) 
+  @include font($fw: 500, $ls: 0.02em);
   color: var(--primary-header-color);
   transition: color 250ms var(--timing-function),
     transition 250ms var(--timing-function);

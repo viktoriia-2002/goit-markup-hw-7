@@ -23,7 +23,7 @@
   background: rgba(47, 48, 58, 0.8);
 
   &__text {
-    @include ($fw: 700);
+    @include font ($fw: 700);
     text-align: center;
     text-transform: uppercase;
     color: white;
