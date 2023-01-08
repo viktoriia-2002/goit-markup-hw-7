@@ -42,7 +42,7 @@ footer {
 }
 
 .address__link {
-  @include font(14, null, 1.71, 0.03em);
+  @include font($fs: 14px, $fw: 400, $lh: 1.17, $ls: 0.03em);
   font-style: normal;
   color: #ffffff;
   transition: color 250ms var(--timing-function);
@@ -52,6 +52,21 @@ footer {
     color: var(--accent-color);
   }
 }
+
+
+
+.address__link-contacts {
+  @include font($fs: 14px, $fw: 400, $lh: 1.17, $ls: 0.03em);
+  font-style: normal;
+  color:  rgba(255, 255, 255, 0.6);
+  transition: color 250ms var(--timing-function);
+
+  &:focus,
+  &:hover {
+    color: var(--accent-color);
+  }
+}
+
 
 .footer-main {
   @include flex-align;

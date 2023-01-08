@@ -6,6 +6,7 @@ header {
   @include flex-align;
 
   &__logo {
+    @include font (26px, 700, 1.19, 0.03em);
     font-family: var(--secondary-font);
     @include font(26px, 700, 1.19);
     color: var(--accent-color);
@@ -50,6 +51,7 @@ header {
 .navigation__item .current {
   color: var(--accent-color);
 }
+
 
 .navigation__link.current::after {
   content: " ";
