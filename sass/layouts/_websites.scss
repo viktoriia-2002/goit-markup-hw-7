@@ -8,9 +8,10 @@
     @include font($fs: 18px, $fw: 700, $lh: 2, $ls: 0.06em);
     letter-spacing: 0.06em;
   }
-  
+
   &__text {
     @include font($fs: 16px, $fw: 400, $lh: 1.19, $ls: 0.03em);
     color: var(--secondary-color);
   }
 }
+// 
