@@ -8,7 +8,6 @@ header {
   &__logo {
     @include font (26px, 700, 1.19, 0.03em);
     font-family: var(--secondary-font);
-    @include font(26px, 700, 1.19);
     color: var(--accent-color);
   }
 
@@ -77,6 +76,10 @@ header {
   & > li {
     margin-left: 40px;
   }
+}
+
+.navigation__item:first-child{
+  margin-left: 0px;
 }
 
 .connections-list__email,

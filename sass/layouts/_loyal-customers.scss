@@ -4,6 +4,7 @@
 }
 .loyal-customers__title {
   text-align: center;
+  @include font($fs: 36px, $fw: 700, $lh: 1.16, $ls: 0.03em);
 }
 
 .clients__items {
@@ -22,7 +23,6 @@
   &:last-child {
     margin-right: 0;
   }
-  
 }
 
 .clients__link {

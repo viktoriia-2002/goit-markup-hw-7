@@ -12,7 +12,8 @@
   }
 
   &__subtitle {
-    @include font($fw: 700, $fs: 1.14);
+    @include font ($fs: 14px, $fw: 700, $lh: 1.14, $ls: 0.03em);
+    font-family: 'Roboto';
     text-transform: uppercase;
     color: var(--primary-header-color);
     margin-bottom: 10px;

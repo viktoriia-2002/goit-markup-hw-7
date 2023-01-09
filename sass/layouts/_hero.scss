@@ -16,7 +16,7 @@
 
 .solutions__title {
   text-align: center;
-  @include font(44px, 900, 1.36, 0.06);
+  @include font(44px, 900, 1.36, 0.06em);
   text-transform: uppercase;
   color: #ffffff;
   margin: 0 auto;
